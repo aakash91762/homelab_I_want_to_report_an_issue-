@@ -164,6 +164,10 @@
             var issue = params.get('issue')
             var other = params.get('other')
     
+            //aakash new code 
+      if (order_id) {
+        document.getElementById("consultationid").setAttribute("value", order_id)
+      }
             document.getElementById('other').hidden = true;
             console.log({ issue, other, language });
             document.getElementById('issue').addEventListener("change", function () {
